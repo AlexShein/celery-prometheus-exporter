@@ -71,8 +71,8 @@ By default, buckets for histograms are the same as default ones in the prometheu
 https://github.com/prometheus/client_python#histogram.
 It means they are intended to cover typical web/rpc requests from milliseconds to seconds,
 so you may want to customize them.
-It can be done via environment variable ``RUNTIME_HISTOGRAM_BUCKETS`` for tasks runtime and
-via environment variable ``LATENCY_HISTOGRAM_BUCKETS`` for tasks latency.
+It can be done via environment variable ``RUNTIME_HISTOGRAM_BUCKET`` for tasks runtime and
+via environment variable ``LATENCY_HISTOGRAM_BUCKET`` for tasks latency.
 Buckets should be passed as a list of float values separated by a comma.
 E.g. ``".005, .05, 0.1, 1.0, 2.5"``.
 
